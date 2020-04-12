@@ -5,14 +5,15 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Welcome Home</title>
+<title>Home</title>
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <div class="form">
-<p>Welcome <?php echo $_SESSION['username']; ?>!</p>
-<p>This is secure area.</p>
-<p><a href="don.php">Dashboard</a></p>
+<p>Bienvevenue ! <?php echo $_SESSION['username']; ?>!</p>
+<p>Veuillez choisir l'une des actions suivantes :</p>
+<p><a href="don.php">Don</a></p>
+<p><a href="sante.php">État de santé</a></p>
 <a href="logout.php">Logout</a>
 
 
