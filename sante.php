@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+
+ 
+require('db.php');
+include("auth.php"); //include auth.php file on all secure pages 
+
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,6 +14,10 @@
     <link rel="stylesheet" href="css/stylee.css"></head>
   
   <body>
+          <p><a href="don.php">Don</a></p>
+          <p><a href="index.php">Home</a></p>
+          <a href="logout.php">Logout</a>
+
 
     <div class="banner">
       <div class="swiper">
@@ -16,8 +27,10 @@
             <div class="swiper-slide slide1">
               <div class="name">Avez-vous les symptômes suivants ?</div>
               <p class="detail">* fièvre<br>* toux<br>* fatigue<br>* corps<br>* douleur<br>* réduction de l'odorat<br>* essoufflement</p>
-                         
-                        
+                         <center>
+                        <input type="checkbox" name="Oui">
+                         <label for="Oui"> Oui</label><br>
+                         </center>
                           
 
             </div>
@@ -25,13 +38,19 @@
             <div class="swiper-slide slide1">
               <div class="name">Avez-vous ces problèmes de santé ?</div>
               <p class="detail">* hypertension artérielle<br>* diabète <br>* maladie cardiaque<br>* maladie pulmonaire<br>* maladie rénale<br>* maladie hépatique<br>*  asthme</p>
-              
+                      <center>
+                        <input type="checkbox" name="Oui">
+                         <label for="Oui"> Oui</label><br>
+                         </center>
             </div>
 
             <div class="swiper-slide slide1">
               <div class="name">Avez-vous souffert de l'une des affections suivantes ?</div>
               <p class="detail">* douleur thoracique écrasante<br>* perte de conscience<br>* perte de conscience<br>* toux sanguine<br></p>
-           
+                          <center>
+                        <input type="checkbox" name="Oui">
+                         <label for="Oui"> Oui</label><br>
+                         </center>
             </div>
 
             <div class="swiper-slide slide1">
@@ -46,6 +65,8 @@
             </div>
           </div>
         </div>
+        </br>
+
         <!-- <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div> -->
         
@@ -57,16 +78,17 @@
               <p class="detail">* douleur thoracique écrasante<br>* perte de conscience<br>* perte de conscience<br>* toux sanguine<br></p>
             </div>
 
-            <div class="swiper-slide slide1">
+            <div class="swiper-slide slide2">
               <div class="name">Avez-vous les symptômes suivants ?</div>
               <p class="detail">* fièvre<br>* toux<br>* fatigue<br>* corps<br>* douleur<br>* réduction de l'odorat<br>* essoufflement</p>
             </div>
 
             
-            <div class="swiper-slide slide1">
+            <div class="swiper-slide slide3">
               <div class="name">Avez-vous ces problèmes de santé ?</div>
               <p class="detail">* hypertension artérielle<br>* diabète <br>* maladie cardiaque<br>* maladie pulmonaire<br>* maladie rénale<br>* maladie hépatique<br>*  asthme</p>
             </div>
+
           </div>
         </div>
         
@@ -76,11 +98,11 @@
               <div class="name">Avez-vous les symptômes suivants ?</div>
               <p class="detail">* fièvre<br>* toux<br>* fatigue<br>* corps<br>* douleur<br>* réduction de l'odorat<br>* essoufflement</p>
             </div>
-            <div class="swiper-slide slide1">
+            <div class="swiper-slide slide2">
               <div class="name">Avez-vous ces problèmes de santé ?</div>
               <p class="detail">* hypertension artérielle<br>* diabète <br>* maladie cardiaque<br>* maladie pulmonaire<br>* maladie rénale<br>* maladie hépatique<br>*  asthme</p>
             </div>
-            <div class="swiper-slide slide1">
+            <div class="swiper-slide slide3">
               <div class="name">Avez-vous souffert de l'une des affections suivantes ?</div>
               <p class="detail">* douleur thoracique écrasante<br>* perte de conscience<br>* perte de conscience<br>* toux sanguine<br></p>
             </div>
