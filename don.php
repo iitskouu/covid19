@@ -15,8 +15,8 @@ include("auth.php"); //include auth.php file on all secure pages
 <script type="text/javascript">
 
 function m(){
-	var mon=document.d1.t1.value;
-	var des=document.d1.t2.value;
+	var mon=document.bank.amount.value;
+	var des=document.bank.receiver.value;
 	var mes="le montant "+mon+" a été transféré pour "+des;
 	alert(mes);
 	
@@ -27,10 +27,10 @@ function m(){
 <div class="form">
 <h1>Transfert de don</h1>
 <br>
-<form name="d1">
-<p><label>Montant à transférer </label>:<input name="t1" type="text"/></p>
+<form name="bank" >
+<p><label>Montant à transférer </label>:<input name="amount" type="text"/></p>
 
-<p><label>Destination / Adresse </label>:<input name="t2" type="text"/></p>
+<p><label>Destination / Adresse </label>:<input name="receiver" type="text"/></p>
 
 <p><input type="submit" value="Valider" onclick="m()"></p>
 </form>
