@@ -12,7 +12,7 @@
 	require('db.php');
 	session_start();
 	require ('gentoken.php');
-	require('veriftoken.php');
+	;
     // If form submitted, insert values into the database.
     if (isset($_POST['username'])){
 		

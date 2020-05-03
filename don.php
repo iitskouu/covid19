@@ -13,18 +13,6 @@ include("auth.php"); //include auth.php file on all secure pages
 <title>Page de Don</title>
 <link rel="stylesheet" href="css/style.css" />
 
-
-<script type="text/javascript">
-
-function m(){
-
-	var mon=document.bank.amount.value;
-	var des=document.bank.receiver.value;
-	var mes="le montant "+mon+" a été transféré pour "+des;
-	alert(mes);
-	
-}
-</script>
 </head>
 <body>
 <div class="form">
@@ -34,7 +22,7 @@ function m(){
 <p><label>Montant à transférer </label>:<input name="amount" type="text"/></p>
 
 <p><label>Destination / Adresse </label>:<input name="receiver" type="text"/></p>
-<input type="text" name="token" value="<?=$_SESSION['token']?>"/>
+<input type="hidden" name="token" value="<?=$_SESSION['token']?>"/>
 
 <p><input type="submit" value="Valider" ></p>
 </form>
